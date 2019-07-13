@@ -177,20 +177,22 @@
             <version>1.0</version>
         </dependency>
     </dependencies>
+
+
+    <!-- 添加tomcat7插件 -->
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.2</version>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <encoding>UTF-8</encoding>
-                    <showWarnings>true</showWarnings>
+                    <port>8080</port>
                 </configuration>
+                <version>2.2</version>
             </plugin>
         </plugins>
     </build>
+
+
 
 </project>
