@@ -1,5 +1,8 @@
 package com.itheima.ssm.domain;
 
+import com.itheima.utils.DateUtils;
+
+
 import java.util.Date;
 
 
@@ -55,7 +58,11 @@ import java.util.Date;
             this.departureTime = departureTime;
         }
 
-        public String getDepartureTimeStr() {
+        public String getDepartureTimeStr(){
+            if (departureTime!=null){
+                departureTimeStr= DateUtils.DateToString(departureTime,"yyyy-MM-dd HH:mm:ss");
+            }
+
             return departureTimeStr;
         }
 
@@ -88,6 +95,15 @@ import java.util.Date;
         }
 
         public String getProductStatusStr() {
+            if (productStatus!=null){
+
+                if (productStatus==0){
+                    productStatusStr="关闭";
+                }
+                if (productStatus==1){
+                    productStatusStr="开启";
+                }
+            }
             return productStatusStr;
         }
 
