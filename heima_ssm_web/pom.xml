@@ -15,21 +15,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.itheima.heima_ssm</groupId>
-            <artifactId>heima_ssm_dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.itheima.heima_ssm</groupId>
-            <artifactId>heima_ssm_domain</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.itheima.heima_ssm</groupId>
             <artifactId>heima_ssm_service</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
@@ -46,6 +40,7 @@
             </plugin>
         </plugins>
     </build>
+
 
 
 
